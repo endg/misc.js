@@ -1,5 +1,5 @@
 .tabset {
-  &:has(.tab-link) { margin: 1em auto; }
+  &:has(.tab-link) { margin-top: 1em; margin-bottom: 1em; }
   &:is(.tabset *) { margin: .5em auto; }
 }
 .tab-link, .tab-pane {
