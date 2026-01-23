@@ -3,6 +3,8 @@ document.querySelectorAll('pre,table,#TableOfContents').forEach(node => {
   function fullwidth(el) {
     el.classList.add('fullwidth');
   }
+  // skip if already in .fullwidth container
+  if (node.closest('.fullwidth')) return;
   switch (node.tagName) {
     case 'PRE':
       const el = node.firstElementChild;
